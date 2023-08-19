@@ -21,6 +21,8 @@ class ItemSeeder extends Seeder
                 'name' => $faker->word,
                 'price' => $faker->randomFloat(2, 10, 1000),
                 'seller' => $faker->name,
+                'created_at' => $faker->dateTime(),
+                'updated_at' => $faker->dateTime()
             ]);
         }
     }
